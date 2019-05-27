@@ -115,6 +115,6 @@
   },
   "np": {
     "yarn": true,
-    "contents": "dist"
+    "contents": "."
   }
 }
