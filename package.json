@@ -30,7 +30,7 @@
     "test:prod": "npm run lint && npm run test -- --no-cache --coverage --coverageReporters=text-lcov | coveralls",
     "commit": "git-cz",
     "precommit": "lint-staged",
-    "release": "release-it --dry-run",
+    "release": "release-it",
     "prerelease": "npm run build",
     "postrelease": "git push --tags"
   },
