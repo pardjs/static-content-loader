@@ -23,13 +23,15 @@
   "scripts": {
     "lint": "tslint  --project tsconfig.json -t codeFrame 'src/**/*.ts' 'test/**/*.ts'",
     "prebuild": "rimraf dist",
-    "build": "tsc && typedoc --out docs --target es6 --theme minimal --mode file src",
+    "build": "tsc",
+    "build:doc": "typedoc --out docs --target es6 --theme minimal --mode file src",
     "test": "jest --coverage",
     "test:watch": "jest --coverage --watch",
     "test:prod": "npm run lint && npm run test -- --no-cache --coverage --coverageReporters=text-lcov | coveralls",
     "commit": "git-cz",
     "precommit": "lint-staged",
-    "release": "np"
+    "release": "np",
+    "prerelease": "npm run build"
   },
   "devDependencies": {
     "@commitlint/cli": "^7.6.1",
