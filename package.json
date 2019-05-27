@@ -1,5 +1,5 @@
 {
-  "name": "static-content-loader",
+  "name": "@pardjs/static-content-loader",
   "version": "1.0.0",
   "description": "The description for the module",
   "keywords": [],
