@@ -31,7 +31,8 @@
     "commit": "git-cz",
     "precommit": "lint-staged",
     "release": "release-it --dry-run",
-    "prerelease": "npm run build"
+    "prerelease": "npm run build",
+    "postrelease": "git push --tags"
   },
   "devDependencies": {
     "@commitlint/cli": "^7.6.1",
