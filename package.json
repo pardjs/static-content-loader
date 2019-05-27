@@ -114,7 +114,7 @@
     }
   },
   "np": {
-    "yarn": false,
+    "yarn": true,
     "contents": "dist"
   }
 }
