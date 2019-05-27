@@ -50,6 +50,7 @@
     "husky": "^2.3.0",
     "jest": "^24.8.0",
     "jest-config": "^24.8.0",
+    "lint-staged": "^8.1.7",
     "nock": "^10.0.6",
     "prettier": "^1.17.1",
     "rimraf": "^2.6.3",
@@ -107,5 +108,10 @@
     "extends": [
       "@commitlint/config-conventional"
     ]
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
   }
 }
