@@ -112,8 +112,5 @@
     "hooks": {
       "pre-commit": "lint-staged"
     }
-  },
-  "np": {
-    "contents": "dist"
   }
 }
