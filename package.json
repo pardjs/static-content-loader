@@ -27,7 +27,6 @@
     "test": "jest --coverage",
     "test:watch": "jest --coverage --watch",
     "test:prod": "npm run lint && npm run test -- --no-cache --coverage --coverageReporters=text-lcov | coveralls",
-    "deploy-docs": "ts-node tools/gh-pages-publish",
     "commit": "git-cz",
     "precommit": "lint-staged",
     "prerelease": "npm run build",
@@ -59,6 +58,7 @@
     "tslint-config-prettier": "^1.18.0",
     "tslint-config-standard": "^8.0.1",
     "typedoc": "^0.14.2",
+    "typedoc-plugin-nojekyll": "^1.0.1",
     "typescript": "^3.4.5"
   },
   "lint-staged": {
