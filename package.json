@@ -30,7 +30,7 @@
     "test:prod": "npm run lint && npm run test -- --no-cache --coverage --coverageReporters=text-lcov | coveralls",
     "commit": "git-cz",
     "precommit": "lint-staged",
-    "release": "np",
+    "release": "release-it --dry-run",
     "prerelease": "npm run build"
   },
   "devDependencies": {
@@ -50,8 +50,8 @@
     "jest-config": "^24.8.0",
     "lint-staged": "^8.1.7",
     "nock": "^10.0.6",
-    "np": "^5.0.2",
     "prettier": "^1.17.1",
+    "release-it": "^12.2.1",
     "rimraf": "^2.6.3",
     "ts-jest": "^24.0.2",
     "ts-node": "^8.2.0",
@@ -113,8 +113,12 @@
       "pre-commit": "lint-staged"
     }
   },
-  "np": {
-    "yarn": true,
-    "contents": "."
+  "release-it": {
+    "git": {
+      "tagName": "v${version}"
+    },
+    "github": {
+      "release": true
+    }
   }
 }
