@@ -20,7 +20,7 @@ export default class StaticContentLoader {
 
   fetchIndex = async (): Promise<object> => {
     const cacheIndex = this.cache.get('INDEX');
-    if (cacheIndex) return cacheIndex;
+    if (cacheIndex) return cacheIndex as object;
 
     const { data: index } = await this.axios.get(
       (this.options && this.options.indexFileName) || this.defaultIndexFileName
@@ -32,7 +32,7 @@ export default class StaticContentLoader {
 
   fetchContent = async (contentPath: string): Promise<object> => {
     let cacheContent = this.cache.get(`#${contentPath}#`);
-    if (cacheContent) return cacheContent;
+    if (cacheContent) return cacheContent as object;
     const { data: content } = await this.axios.get(contentPath);
 
     this.cache.set(`${contentPath}`, content);
