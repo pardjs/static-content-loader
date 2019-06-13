@@ -1,6 +1,6 @@
 'use strict';
 
-import StaticContentLoader from '../src/index';
+import { StaticContentLoader } from '../src/index';
 import { revokeMock } from './fixture/utils';
 import {
   mockData as staticContentMockData,

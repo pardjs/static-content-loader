@@ -4,6 +4,8 @@
   "description": "The description for the module",
   "keywords": [],
   "main": "dist/src/index.js",
+  "module": "dist/src/index.es.js",
+  "typings": "dist/src/index.d.js",
   "files": [
     "dist"
   ],

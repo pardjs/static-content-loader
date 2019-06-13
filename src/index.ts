@@ -6,7 +6,7 @@ interface StaticContentLoaderOptions {
   timeout?: number;
 }
 
-export default class StaticContentLoader {
+export class StaticContentLoader {
   private defaultIndexFileName = 'index.json';
   private defaultTimeout = 3000;
   private axios: AxiosInstance;
